@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mor Diouf | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition duration-300">
+
+<!-- NAVBAR -->
+<header class="fixed w-full bg-white dark:bg-gray-800 shadow z-50">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <h1 class="text-2xl font-bold">Mor Diouf</h1>
+
+    <div class="flex items-center space-x-6">
+
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#hero" class="hover:text-blue-600">Accueil</a>
+        <a href="#apropos" class="hover:text-blue-600">À propos</a>
+        <a href="#projets" class="hover:text-blue-600">Projets</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+
+      <button id="darkToggle" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-800 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24">
+  <img src="IMG-20250827-WA0017.jpg"
+       class="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-blue-600"
+       data-aos="fade-down">
+
+  <h2 class="text-4xl md:text-6xl font-bold mb-4" data-aos="fade-up">
+    Mor Diouf
+  </h2>
+
+  <p class="text-xl text-gray-600 dark:text-gray-300 mb-6"
+     data-aos="fade-up" data-aos-delay="200">
+    Ingénieur Informatique | Développeur Web
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="apropos" class="py-20 px-6 max-w-4xl mx-auto text-center">
+  <h3 class="text-3xl font-bold mb-6" data-aos="fade-up">À propos</h3>
+  <p class="text-gray-600 dark:text-gray-300" data-aos="fade-up">
+    Je suis ingénieur en informatique passionné par le développement web,
+    les API et les bases de données. Mon objectif est de créer des applications
+    modernes, performantes et évolutives. Je suis constamment à la recherche de nouveaux défis
+    pour améliorer mes compétences et contribuer à des projets innovants. 
+    
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projets" class="py-20 bg-gray-100 dark:bg-gray-800 px-6">
+  <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+    Projets
+  </h3>
+
+  <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
+    <div class="p-6 bg-white dark:bg-gray-700 rounded shadow" data-aos="fade-right">
+      <h4 class="font-bold mb-2">Calculateur de moyenne en C</h4>
+      <p>Programme permettant de calculer la moyenne pondérée.</p>
+    </div>
+
+    <div class="p-6 bg-white dark:bg-gray-700 rounded shadow" data-aos="fade-left">
+      <h4 class="font-bold mb-2">Mini CRUD en PHP</h4>
+      <p>Application web connectée à MySQL.</p>
+    </div>
+    <div class=" border-4 border-blue-600 p-6 bg-white dark:bg-gray-700 rounded shadow" data-aos="fade-left ">
+      <h4 class="font-bold mb-2">API REST en Node.js</h4>
+      <p>API pour gérer une collection de livres avec Express et MongoDB.</p>
+    </div>
+    <div>
+        <div class="p-6 bg-white dark:bg-gray-700 rounded shadow" data-aos="fade-right">
+        <h4 class="font-bold mb-2">Application de gestion de tâches en React</h4>
+        <p>Application front-end pour gérer des tâches avec React et Redux.</p>
+    </div>
+    <div class="p-6 bg-amber-300 dark:bg-green-900  rounded shadow-2xl" data-aos= "fade-left">
+        <h4 class="font-bold mb-2">Site de portfolio personnel</h4>
+        <p>Ce site que vous consultez actuellement, développé avec HTML, Tailwind CSS et AOS.</p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-6 text-center">
+  <h3 class="text-3xl font-bold mb-6" data-aos="fade-up">Contact</h3>
+
+  <p>Email: <strong>dmor9266@gmail.com</strong></p>
+  <p>Téléphone : <strong>+221 77840921</strong></p>
+  <p>LinkedIn :
+    <a href="https://www.linkedin.com/in/mor-diouf-949390319"
+       class="text-blue-600 underline" target="_blank">
+       Voir mon profil
+    </a>
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-6 text-center bg-gray-100 dark:bg-gray-800">
+  © 2026 Mor Diouf - Tous droits réservés
+</footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  const toggle = document.getElementById('darkToggle');
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+</script>
+
+</body>
+</html>
